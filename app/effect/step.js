@@ -1,4 +1,4 @@
-$(function () {
+$(function(){
     var PageTransitions = (function () {
 
         var $main = $('#pt-main'),
@@ -35,40 +35,25 @@ $(function () {
                 [true, false],
                 [false, true],
                 [true, false]
-<<<<<<< HEAD
-            ]
-            $(".pt-page-question").each(function (i) {
-                var dd = $(this).find('dd');
-                dd.on('click', answer[i], function (e) {
-=======
             ];
             var isCorrect = true;
             $(".pt-page-question").each(function(i){
                 var dd= $(this).find('dd');
                 dd.on('click',answer[i],function(e){
->>>>>>> 1f20dcb58aeebeccd75aa5153edae15496c3cec3
                     dd.find('.selectdot').show();
                     dd.find(".check").hide();
-                    var curIndex = $(this).index() - 1;
+                    var curIndex = $(this).index()-1;
                     $(this).find('.selectdot').hide().siblings().show();
 
-                    if ((e.data[curIndex])) {
+                    if((e.data[curIndex]))  {
                         $('.yes').show();
-<<<<<<< HEAD
-                        $('.yes img').attr('src', 'assets/images/yes.gif');
-                        nextPage();
-
-                    } else {
-                        $('.yes img').attr('src', 'assets/images/no.gif');
-=======
                         isCorrect = true;
-                       $('.yes img').attr('src','assets/images/yes.gif');
+                        $('.yes img').attr('src','assets/images/yes.gif');
                         nextPage();
 
                     }else{
                         isCorrect = false;
-                      $('.yes img').attr('src','assets/images/no.gif')
->>>>>>> 1f20dcb58aeebeccd75aa5153edae15496c3cec3
+                        $('.yes img').attr('src','assets/images/no.gif')
 
                     };
 
@@ -97,12 +82,14 @@ $(function () {
             else {
                 current = 0;
             }
-            var dongClass = ['pt-page-moveFromTop', 'pt-page-rotateCarouselRightIn', 'pt-page-rotateCarouselLeftIn', 'pt-page-scaleUp', 'pt-page-scaleUpDown']
+            var dongClass=['pt-page-moveFromTop','pt-page-rotateCarouselRightIn','pt-page-rotateCarouselLeftIn','pt-page-scaleUp','pt-page-scaleUpDown']
             var $nextPage = $pages.eq(current).addClass('pt-page-current'),
                 outClass = 'pt-page-scaleDown';
             inClass = 'pt-page-moveFromBottom pt-page-ontop';
             $pages.find("[data-aniclss]").removeClass(dongClass.join(' '));
-            var cur = $nextPage.find("[data-aniclss]");
+            var cur =$nextPage.find("[data-aniclss]");
+
+
 
 
             $currPage.addClass(outClass).on(animEndEventName, function () {

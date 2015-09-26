@@ -35,10 +35,18 @@ $(function () {
                 [true, false],
                 [false, true],
                 [true, false]
+<<<<<<< HEAD
             ]
             $(".pt-page-question").each(function (i) {
                 var dd = $(this).find('dd');
                 dd.on('click', answer[i], function (e) {
+=======
+            ];
+            var isCorrect = true;
+            $(".pt-page-question").each(function(i){
+                var dd= $(this).find('dd');
+                dd.on('click',answer[i],function(e){
+>>>>>>> 1f20dcb58aeebeccd75aa5153edae15496c3cec3
                     dd.find('.selectdot').show();
                     dd.find(".check").hide();
                     var curIndex = $(this).index() - 1;
@@ -46,11 +54,21 @@ $(function () {
 
                     if ((e.data[curIndex])) {
                         $('.yes').show();
+<<<<<<< HEAD
                         $('.yes img').attr('src', 'assets/images/yes.gif');
                         nextPage();
 
                     } else {
                         $('.yes img').attr('src', 'assets/images/no.gif');
+=======
+                        isCorrect = true;
+                       $('.yes img').attr('src','assets/images/yes.gif');
+                        nextPage();
+
+                    }else{
+                        isCorrect = false;
+                      $('.yes img').attr('src','assets/images/no.gif')
+>>>>>>> 1f20dcb58aeebeccd75aa5153edae15496c3cec3
 
                     };
 
@@ -58,7 +76,7 @@ $(function () {
 
             })
             $('.test').click(function () {
-                nextPage();
+                isCorrect && nextPage();
             });
 
 

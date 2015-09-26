@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae386b43-fbc6-4ad0-bb8a-107f10c9ef43" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sentMail.php" afterPath="$PROJECT_DIR$/sentMail.php" />
-    </list>
+    <list default="true" id="ae386b43-fbc6-4ad0-bb8a-107f10c9ef43" name="Default" comment="" />
     <ignored path="client.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

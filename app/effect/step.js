@@ -38,7 +38,7 @@ $(function(){
             ];
             var isCorrect = true;
             $(".pt-page-question").each(function(i){
-                var dd= $(this).find('dd');
+                var dd= $(this).find('.answer-right dd');
                 dd.on('click',answer[i],function(e){
                     dd.find('.selectdot').show();
                     dd.find(".check").hide();
@@ -53,13 +53,24 @@ $(function(){
 
                     }else{
                         isCorrect = false;
-                        $('.yes img').attr('src','assets/images/no.gif')
+                        $(this).parents('.pt-page-question').find(".answer-error").show();
+                        $(this).parents('.pt-page-question').find(".answer-right").hide();
 
+                        $('.yes img').attr('src','assets/images/no.gif')
                     };
 
                 });
 
-            })
+            });
+
+            $('.reanswer').click(function(){
+                $('.yes,.check').hide();
+                $('.selectdot').show();
+                $(this).parents('.pt-page-question').find(".answer-error").hide;
+                $(this).parents('.pt-page-question').find(".answer-right").show();
+            });
+
+
             $('.test').click(function () {
                 isCorrect && nextPage();
             });

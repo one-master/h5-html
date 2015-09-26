@@ -35,7 +35,8 @@ $(function(){
                 [true, false],
                 [false, true],
                 [true, false]
-            ]
+            ];
+            var isCorrect = true;
             $(".pt-page-question").each(function(i){
                 var dd= $(this).find('dd');
                 dd.on('click',answer[i],function(e){
@@ -46,10 +47,12 @@ $(function(){
 
                     if((e.data[curIndex]))  {
                         $('.yes').show();
+                        isCorrect = true;
                        $('.yes img').attr('src','assets/images/yes.gif');
                         nextPage();
 
                     }else{
+                        isCorrect = false;
                       $('.yes img').attr('src','assets/images/no.gif')
 
                     };
@@ -58,7 +61,7 @@ $(function(){
 
             })
             $('.test').click(function () {
-                nextPage();
+                isCorrect && nextPage();
             });
 
 

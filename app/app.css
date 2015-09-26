@@ -291,7 +291,9 @@ span {
     opacity: 0.5;
     width: 150%;
     height: 330%;
-    border-radius: 10%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius:20px;
     position: absolute;
 }
 
@@ -299,19 +301,24 @@ dl {
     color: #000;
     position: absolute;
     left: 10%;
+    width:50%;
 }
 
 dl dt {
     margin-top: 20%;
+    text-align: left;
 }
 
 dl dd {
     margin-top: 10%;
+line-height: 31px;
+    text-align: left;
 }
 
 dl span {
     display: inline-block;
-    width: 10%
+    width: 10%;
+    float:left;
 }
 
 dl span .check {
@@ -321,7 +328,7 @@ dl span .check {
 .yes {
     display: none;
     position: absolute;
-    bottom: 10%;
+    bottom: 10px;
     width: 37%;
     left: 30%;
 }

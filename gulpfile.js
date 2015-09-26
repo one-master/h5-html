@@ -27,7 +27,4 @@ gulp.task('baseJs', function() {
         .pipe(gulp.dest(baseJsList.distPath)); //输出
 });
 
-
-
-
 gulp.task('default',['baseJs']);

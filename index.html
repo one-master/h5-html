@@ -238,8 +238,8 @@
         <img class="pt-page-scaleUpDown" data-aniclss="pt-page-scaleUpDown" src="assets/images/yes.gif" alt=""/>
         <span>恭喜你！都答对了！</span>
 
-        <form action="" name="myForm">
-        <ul ng-controller="submit">
+        <form action="" name="myForm" ng-controller="submittt">
+        <ul>
             <li><span class="user"><img src="assets/images/usernameicon.png" alt=""/></span><input type="text" placeholder="请输入你的名字" ng-model="usernames" name="usernames"   ng-pattern="/^[a-z0-9_\u4e00-\u9fa5]+$/">
 
 
@@ -263,7 +263,7 @@
 <script src="bower_components/angular/angular.js"></script>
 <script>
     var forms = angular.module('form',[]);
-    forms.controller('submit',['$scope','$http',function($scope,$http){
+    forms.controller('submittt',['$scope','$http',function($scope,$http){
     $scope.submits = function(){
         if($scope.myForm.$valid){
             $http({

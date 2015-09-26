@@ -357,6 +357,12 @@ dl span .check {
     display: none;
     height: 100%;
 }
+.answer-right{height: 100%;
+}
+.bgpic{
+    height: 100%;
+
+}
 .answer-error .pos span {
     display: block;
     font-weight: bold;

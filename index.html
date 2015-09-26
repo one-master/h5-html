@@ -14,9 +14,9 @@
 <body>
 <section>
 <div class="container">
-<div class="loading">
-    <img src="assets/images/loading.gif" alt=""/>
-</div>
+    <div class="loading">
+        <img src="assets/images/loading.gif" alt=""/>
+    </div>
 </div>
 
 <div class="test"><p class="Move"></p></div>
@@ -26,7 +26,8 @@
         <div class="pl_pr animation-parent">
             <div class="title-pic1" data-aniclss="pt-page-moveFromTop">
                 <img src="assets/images/page01title.png" alt=""/></div>
-            <div class="title-pic2"  data-aniclss="pt-page-rotateCarouselLeftIn"><img src="assets/images/page01subtitle.png" alt=""/></div>
+            <div class="title-pic2" data-aniclss="pt-page-rotateCarouselLeftIn"><img
+                    src="assets/images/page01subtitle.png" alt=""/></div>
             <p>
                 在听完上一期关于传奇白马的故事后，你是否对那片神奇的活泉水特别感兴趣呢？由Rocozels侯爵出资修建的活泉水池，因造福了许多人，使得雅漾这座小城也越来越有名，成为肌肤疗愈之城。</p>
 
@@ -39,8 +40,10 @@
     页面切换效果</h1><img data-src="assets/images/page03.jpg" alt=""/></div>
 <div class="pt-page pt-page-4">
     <div class="pos title4 animation-parent">
-        <div class="title-pic1" data-aniclss="pt-page-rotateCarouselRightIn"><img src="assets/images/page04title.png" alt=""/></div>
-        <div class="title-pic2" data-aniclss="pt-page-rotateCarouselLeftIn"><img src="assets/images/page04subtitle.png" alt=""/></div>
+        <div class="title-pic1" data-aniclss="pt-page-rotateCarouselRightIn"><img src="assets/images/page04title.png"
+                                                                                  alt=""/></div>
+        <div class="title-pic2" data-aniclss="pt-page-rotateCarouselLeftIn"><img src="assets/images/page04subtitle.png"
+                                                                                 alt=""/></div>
         <p>在雅漾活泉护理中心，除了基础疗法的盆浴、淋浴、局部冲淋、水下按摩，还有封包疗法、日光水浴等等。最让伊姐动容的是，因每年接待的儿 童超过30%，护理中心还备有儿童游乐室和迷你小盆浴。有爱尽在细节处，简直萌萌哒！</p>
     </div>
     <div class="pos p1">
@@ -116,7 +119,9 @@
                  <img class="check" src="assets/images/selectcheck.png" alt=""/>
                  </span> A．图卢兹·劳特累克
             </dd>
-            <dd><span><img class="selectdot" src="assets/images/selectdot.png" alt=""/><img class="check" src="assets/images/selectcheck.png" alt=""/> </span> B．亨利·马蒂斯
+            <dd><span><img class="selectdot" src="assets/images/selectdot.png" alt=""/><img class="check"
+                                                                                            src="assets/images/selectcheck.png"
+                                                                                            alt=""/> </span> B．亨利·马蒂斯
             </dd>
         </dl>
 
@@ -178,10 +183,14 @@
                 代科学手段复制的吗？
             </dt>
             <dd>
-                 <span><img class="selectdot" src="assets/images/selectdot.png" alt=""/><img class="check" src="assets/images/selectcheck.png" alt=""/></span>  A．可以
+                <span><img class="selectdot" src="assets/images/selectdot.png" alt=""/><img class="check"
+                                                                                            src="assets/images/selectcheck.png"
+                                                                                            alt=""/></span> A．可以
             </dd>
             <dd>
-                  <span><img class="selectdot" src="assets/images/selectdot.png" alt=""/><img class="check" src="assets/images/selectcheck.png" alt=""/></span> B．不可以
+                <span><img class="selectdot" src="assets/images/selectdot.png" alt=""/><img class="check"
+                                                                                            src="assets/images/selectcheck.png"
+                                                                                            alt=""/></span> B．不可以
             </dd>
         </dl>
 
@@ -238,22 +247,28 @@
         <img class="pt-page-scaleUpDown" data-aniclss="pt-page-scaleUpDown" src="assets/images/yes.gif" alt=""/>
         <span>恭喜你！都答对了！</span>
 
-        <form action="" name="myForm">
-        <ul ng-controller="submit">
-            <li><span class="user"><img src="assets/images/usernameicon.png" alt=""/></span><input type="text" placeholder="请输入你的名字" ng-model="usernames" name="usernames"   ng-pattern="/^[a-z0-9_\u4e00-\u9fa5]+$/">
+        <form action="" name="myForm" ng-controller="submit">
+            <ul>
+                <li><span class="user"><img src="assets/images/usernameicon.png" alt=""/></span><input type="text"
+                                                                                                       placeholder="请输入你的名字"
+                                                                                                       ng-model="usernames"
+                                                                                                       name="usernames"
+                                                                                                       ng-pattern="/^[a-z0-9_\u4e00-\u9fa5]+$/">
 
 
-                <div class="error" ng-show="myForm.usernames.$invalid">请正确输入你的名字</div>
-            </li>
+                    <div class="error" ng-show="myForm.usernames.$invalid">请正确输入你的名字</div>
+                </li>
 
 
-            <li>
-                <span class="user"><img src="assets/images/phonenumbericon.png" alt=""/></span>
-                <input type="text" ng-model="number" name="number" ng-pattern="/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/"/>
-                <div class="error" ng-show="myForm.number.$invalid">请正确输入手机号码</div>
-            </li>
-        </ul>
-        <a href="#" ng-click="submits()">提 交</a></form>
+                <li>
+                    <span class="user"><img src="assets/images/phonenumbericon.png" alt=""/></span>
+                    <input type="text" ng-model="number" name="number"
+                           ng-pattern="/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/"/>
+
+                    <div class="error" ng-show="myForm.number.$invalid">请正确输入手机号码</div>
+                </li>
+            </ul>
+            <a href="#" ng-click="submits()">提 交</a></form>
     </div>
     <img data-src="assets/images/page06.jpg" alt=""/>
 </div>
@@ -262,39 +277,39 @@
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/angular/angular.js"></script>
 <script>
-    var forms = angular.module('form',[]);
-    forms.controller('submit',['$scope','$http',function($scope,$http){
-    $scope.submits = function(){
-        if($scope.myForm.$valid){
-            $http({
-                method: "POST",
-                url: "sentMail.php",
-                params: {
-                    user: $scope.usernames,
-                    phone:$scope.number
-                }
-            })
+    var forms = angular.module('form', []);
+    forms.controller('submit', ['$scope', '$http', function ($scope, $http) {
+        $scope.submits = function () {
+            if ($scope.myForm.$valid) {
+                $http({
+                    method: "POST",
+                    url: "sentMail.php",
+                    params: {
+                        user: $scope.usernames,
+                        phone: $scope.number
+                    }
+                })
 
+            }
         }
-    }
     }])
 
     var img = $('[data-src]');
     var imglength = img.length;
 
-    function accountNumb(){
+    function accountNumb() {
         imglength--;
 
-        if(imglength<2){
+        if (imglength < 2) {
             alert('完成了,所以,可以隐藏loading了')
             $('.container').hide();
         }
 
     }
-    img.on({'load':accountNumb,'error':accountNumb});
+    img.on({'load': accountNumb, 'error': accountNumb});
 
-    img.each(function(){
-        $(this).attr('src',$(this).data('src'));
+    img.each(function () {
+        $(this).attr('src', $(this).data('src'));
     });
 
 </script>

@@ -12,6 +12,7 @@ body, html {
 }
 ul, ol{ margin:0; padding:0;}
 ul li{ text-decoration: none;list-style: none;}
+p{margin:0px; padding: 0px;}
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before, .clearfix:after {
     content: " ";
@@ -109,9 +110,6 @@ span {
     color: #ef896f;
 }
 
-.pt-page {
-    overflow-y: scroll;
-}
 
 .pos {
     position: absolute;
@@ -129,24 +127,25 @@ span {
 
 .title1 .title-pic1 {
     width: 75%;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
 }
 
 .title1 .title-pic2 {
     width: 36%;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
 }
 
 .pos p {
     color: #231916;
-    line-height: 20px;
-    font-size: 0.5rem;
+    line-height: 18px;
+    font-size: 0.8rem;
     width: 100%;
     text-indent: 2em;
 }
 
 .pt-page-1 {
     background: none;
+
 }
 
 .pt-page img {
@@ -158,27 +157,34 @@ span {
 
 .pt-page h1 {
     color: #000000;
-    font-size: 1em;
+    font-size: 0.8em;
     letter-spacing: 0px;
     text-indent: 2em;
     padding: 0 5%;
     text-align: left;
+    font-family: simsun;
+    top:4%;
+    line-height: 1.2rem;
+    left:0px;
 }
 
 .pt-page h1 span {
     display: inline;
-    color: #F08A70;
+    color:#F08A70;
     font-weight: bold;
+    font-size: 0.8rem;
+    opacity: 1;
 }
 
 .title4 {
     top: 0px;
-    left: 4%;
+    left: 0px;
+    padding:0 10px;
 }
-.title4 p{ line-height: 14px;}
+.title4 p{ line-height: 14px; width: 100%; display: inline-block;}
 
 .title4 .title-pic1 {
-    margin-top: 10%;
+    margin-top: 7%;
     margin-bottom: 5%;
     width: 70%;
 
@@ -187,6 +193,7 @@ span {
 
 .title4 .title-pic2 {
     width: 50%;
+    margin-bottom:5%;
 }
 
 .p1 {
@@ -213,6 +220,7 @@ span {
 .title5 p {
     text-align: center;
     display: inline-block;
+margin-bottom: 5%;
 }
 
 .title5 span {

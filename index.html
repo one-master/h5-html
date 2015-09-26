@@ -286,14 +286,15 @@
     }
     }])
 
-    var img = $('.pt-page img');
+    var img = $('[data-src]');
     var imglength = img.length;
+    debugger
     function accountNumb(){
         imglength--;
 
         if(imglength<2){
             alert('完成了,所以,可以隐藏loading了')
-            $('.loading').hide();
+            $('.container').hide();
         }
 
     }

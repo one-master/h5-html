@@ -8,12 +8,20 @@
 
 如果这里:
 ```sh
-[
-    [false,true],
-    [false,true],
-    [false,true]
-];
+        var answer = [
+            [false, true],
+            [true, false],
+            [true, false],
+            [false, true],
+            [true, false]
+        ];
 
 ```
 表示有三道题,第道题的第二个为正确答案
 
+
+```sh
+
+ncftp -u tester -p ghj2015 116.251.205.84
+
+```

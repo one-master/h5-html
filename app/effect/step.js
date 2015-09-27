@@ -40,7 +40,7 @@ $(function () {
                 $(".answer-error").hide;
                 $(".answer-right").show();
                 nextPage(pagesCount-6);
-                $(this).unbind('click');
+
             });
         }
 

@@ -212,4 +212,5 @@ $(function () {
 
     $(".title1 .title-pic1").addClass('pt-page-moveFromTop');
     $(".title1 .title-pic2").addClass('pt-page-rotateCarouselLeftIn');
+
 })

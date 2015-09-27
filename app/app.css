@@ -154,7 +154,8 @@ span {
     overflow: hidden;
     display: block;
 }
-
+.title6-header img{visibility:hidden;}
+.title6-header .pt-page-scaleUp{ visibility:visible;}
 .pt-page h1 {
     color: #000000;
     font-size: 0.8em;
@@ -190,12 +191,14 @@ span {
 
 }
 
-
+.title4 .title-pic1 img{ visibility: hidden;}
+.title4 .pt-page-rotateCarouselRightIn img{ visibility: visible;}
 .title4 .title-pic2 {
     width: 50%;
     margin-bottom:5%;
 }
-
+.title4 .title-pic2 img{ visibility: hidden;}
+.title4 .pt-page-rotateCarouselRightIn img{ visibility: visible;}
 .p1 {
     top: 50%;
     right: 2%;
@@ -321,7 +324,10 @@ dl span .check {
     width: 35%;
     display: inline-block;
     margin-top: 10%;
+     visibility: hidden;
 }
+.yes-or-no .pt-page-scaleUp,.yes-or-no .pt-page-scaleUpDown{ visibility: visible;}
+
 
 .pt-page-13 .pos span {
     display: block;

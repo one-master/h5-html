@@ -18,10 +18,31 @@ $(function () {
                 'msAnimation': 'MSAnimationEnd',
                 'animation': 'animationend'
             },
+
         // animation end event name
             animEndEventName = animEndEventNames[Modernizr.prefixed('animation')],
+
         // support css animations
             support = Modernizr.cssanimations;
+        var answer = [
+            [true, false],
+            [true, false],
+            [true, false],
+            [true, false],
+            [true, false]
+        ];
+
+        function reanswertoall(){
+            $('.reanswertoall').click(function(){
+                hasIncorrect = false;
+                $('.yes,.check').hide();
+                $('.selectdot').show();
+                $(".answer-error").hide;
+                $(".answer-right").show();
+                nextPage(pagesCount-6);
+                $(this).unbind('click');
+            });
+        }
 
         function init() {
 
@@ -31,13 +52,6 @@ $(function () {
             });
 
             $pages.eq(current).addClass('pt-page-current');
-            var answer = [
-                [true, false],
-                [true, false],
-                [true, false],
-                [true, false],
-                [true, false]
-            ];
 
             var isCorrect = true;
 
@@ -69,6 +83,7 @@ $(function () {
                 });
 
             });
+
 
             $('.reanswer').click(function () {
                 $('.yes,.check').hide();
@@ -132,12 +147,13 @@ $(function () {
         function totaoResult($nextPage) {
             if ($nextPage.hasClass('total-finish') && hasIncorrect) {
                 $('.finish-error').show().siblings().hide();
+                reanswertoall();
             }
         }
         function endNextAnimation(){
             $('.yes').hide();
         }
-        function nextPage() {
+        function nextPage(costomCurpage) {
             if (isAnimating) {
                 return false;
             }
@@ -146,8 +162,14 @@ $(function () {
 
             var $currPage = $pages.eq(current);
 
+            if(costomCurpage){
+                current = costomCurpage
+            }
+
             if (current < pagesCount - 1) {
-                ++current;
+                if(!costomCurpage){
+                    ++current;
+                }
             } else {
                 return;
             }

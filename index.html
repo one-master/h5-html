@@ -17,9 +17,12 @@
     <i id="audioBtn" class="btn_music"></i>
 
     <div class="coffee-steam-box" style="height: 100px; width: 50px; left: 60px; top: -92px; position: absolute; overflow: hidden; z-index: 0;"></div></div>
-<video src="smiles.mp3" autoplay  hidden id="video" style="display: none;"></video>
+<div style="display: none;">
+<video  autoplay  hidden="hidden" id="video" webkit-playsinline="true" style="display: none;">
+    <source type="audio/mp3" src="smiles.mp3" -webkit-playsinline=true>
+</video>
+</div>
 <section>
-<
 
     <div class="container">
         <div class="loading">
@@ -404,7 +407,7 @@
     img.each(function () {
         $(this).attr('src', $(this).data('src'));
     });
-
+alert('ccc');
 </script>
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>

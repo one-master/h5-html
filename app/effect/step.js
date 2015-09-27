@@ -25,10 +25,10 @@ $(function () {
         // support css animations
             support = Modernizr.cssanimations;
         var answer = [
+            [false, true],
             [true, false],
             [true, false],
-            [true, false],
-            [true, false],
+            [false, true],
             [true, false]
         ];
 
@@ -131,7 +131,7 @@ $(function () {
                         !stopAutoMove && nextPage();
                     }
                     if (deltaY <= -50) {
-                        //$this.trigger("swipeDown");
+                        !stopAutoMove && nextPage(false,true);
                     }
                     if (Math.abs(deltaX) >= 50 || Math.abs(deltaY) >= 50) {
                         $this.unbind('touchmove', touchmove);
@@ -148,12 +148,14 @@ $(function () {
             if ($nextPage.hasClass('total-finish') && hasIncorrect) {
                 $('.finish-error').show().siblings().hide();
                 reanswertoall();
+            } else{
+                $('.finish-right').show().siblings().hide();
             }
         }
         function endNextAnimation(){
             $('.yes').hide();
         }
-        function nextPage(costomCurpage) {
+        function nextPage(costomCurpage,moveUp) {
             if (isAnimating) {
                 return false;
             }
@@ -168,7 +170,11 @@ $(function () {
 
             if (current < pagesCount - 1) {
                 if(!costomCurpage){
-                    ++current;
+                    if(moveUp){
+                        current ? --current:(current=0);
+                    } else{
+                        ++current;
+                    }
                 }
             } else {
                 return;

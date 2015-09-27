@@ -336,7 +336,7 @@
                 <img data-src="assets/images/page06.jpg" alt=""/>
             </div>
             <div class="finish-right">
-                <div class="pos yes-or-no animation-parent">
+                <div class="pos yes-or-no myyes animation-parent">
                     <img class="" data-aniclss="pt-page-scaleUpDown" src="assets/images/yes.gif"
                          alt=""/>
                     <span>恭喜你！都答对了！</span>
@@ -345,7 +345,7 @@
                         <ul>
                             <li><span class="user"><img src="assets/images/usernameicon.png" alt=""/></span><input
                                     type="text" placeholder="请输入你的名字" ng-model="usernames" name="usernames"
-                                    ng-pattern="/^[a-z0-9_\u4e00-\u9fa5]+$/" required>
+                                    ng-pattern="/^[a-z0-9_\u4e00-\u9fa5]+$/">
 
 
                                 <div class="error" ng-show="myForm.usernames.$invalid">请正确输入你的名字</div>
@@ -355,7 +355,7 @@
                             <li>
                                 <span class="user"><img src="assets/images/phonenumbericon.png" alt=""/></span>
                                 <input type="text" ng-model="number" name="number"
-                                       ng-pattern="/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/" required/>
+                                       ng-pattern="/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/"/>
 
                                 <div class="error" ng-show="myForm.number.$invalid">请正确输入手机号码</div>
                             </li>

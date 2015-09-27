@@ -323,18 +323,6 @@
         </div>
 
         <div class="pt-page pt-page-14 pt-page-question total-finish" ng-app="form">
-            <div class="answer-error finish-error">
-                <div class="pos yes-or-no animation-parent">
-                    <img class="" data-aniclss="pt-page-scaleUpDown" src="assets/images/no.gif"
-                         alt=""/>
-
-                    <div class="redo">
-                        <span>很抱歉！ 5道题你您都没有回答对哦!</span>
-                        <a href="#" class="reanswertoall">重新答题</a>
-                    </div>
-                </div>
-                <img data-src="assets/images/page06.jpg" alt=""/>
-            </div>
             <div class="finish-right">
                 <div class="pos yes-or-no myyes animation-parent">
                     <img class="" data-aniclss="pt-page-scaleUpDown" src="assets/images/yes.gif"
@@ -403,11 +391,9 @@
 
     function accountNumb() {
         imglength--;
-
-        if (imglength < 2) {
-            $('.container').hide();
+        if (imglength <= 0) {
+            $('.container').hide(80);
         }
-
     }
     img.on({'load': accountNumb, 'error': accountNumb});
 

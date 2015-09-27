@@ -32,17 +32,6 @@ $(function () {
             [true, false]
         ];
 
-        function reanswertoall(){
-            $('.reanswertoall').click(function(){
-                hasIncorrect = false;
-                $('.yes,.check').hide();
-                $('.selectdot').show();
-                $(".answer-error").hide;
-                $(".answer-right").show();
-                nextPage(pagesCount-6);
-
-            });
-        }
 
         function init() {
 
@@ -145,10 +134,7 @@ $(function () {
         }
 
         function totaoResult($nextPage) {
-            if ($nextPage.hasClass('total-finish') && hasIncorrect) {
-                $('.finish-error').show().siblings().hide();
-                reanswertoall();
-            } else{
+            if ($nextPage.hasClass('total-finish')) {
                 $('.finish-right').show().siblings().hide();
             }
         }

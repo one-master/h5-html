@@ -318,9 +318,9 @@
 }
 
 .pt-page-scaleUp {
-	-webkit-animation: scaleUp .3s ease both;
-	-moz-animation: scaleUp .3s ease both;
-	animation: scaleUp .3s ease both;
+	-webkit-animation: scaleUp .2s ease both;
+	-moz-animation: scaleUp .2s ease both;
+	animation: scaleUp .2s ease both;
 }
 
 .pt-page-scaleUpDown {
@@ -898,11 +898,11 @@
 	transition: opacity 0.3s;
 
 	-webkit-transform-origin: 100% 50%;
-	-webkit-animation: rotateCarouselRightIn .8s both ease;
+	-webkit-animation: rotateCarouselRightIn .4s both ease;
 	-moz-transform-origin: 100% 50%;
-	-moz-animation: rotateCarouselRightIn .8s both ease;
+	-moz-animation: rotateCarouselRightIn .4s both ease;
 	transform-origin: 100% 50%;
-	animation: rotateCarouselRightIn .8s both ease;
+	animation: rotateCarouselRightIn .4s both ease;
 }
 .pt-page-rotateCarouselTopOut {
 	-webkit-transition: opacity 0.5s;

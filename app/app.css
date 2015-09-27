@@ -308,7 +308,7 @@ dl span .check {
 .yes {
     display: none;
     position: absolute;
-    bottom: 10px;
+    bottom: 18%;
     width: 37%;
     left: 30%;
 }
@@ -368,4 +368,7 @@ dl span .check {
     font-weight: bold;
     margin-top: 10%;
     font-size: 1.3rem;
+}
+.finish-right{
+    height: 100%;
 }

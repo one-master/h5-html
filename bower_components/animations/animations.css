@@ -746,6 +746,11 @@
 
 /* cube */
 .pt-page-rotateCubeLeftOut {
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:  opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
 	-webkit-transform-origin: 100% 50%;
 	-webkit-animation: rotateCubeLeftOut .6s both ease-in;
 	-moz-transform-origin: 100% 50%;
@@ -754,6 +759,11 @@
 	animation: rotateCubeLeftOut .6s both ease-in;
 }
 .pt-page-rotateCubeLeftIn {
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:  opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
 	-webkit-transform-origin: 0% 50%;
 	-webkit-animation: rotateCubeLeftIn .6s both ease-in;
 	-moz-transform-origin: 0% 50%;
@@ -762,6 +772,11 @@
 	animation: rotateCubeLeftIn .6s both ease-in;
 }
 .pt-page-rotateCubeRightOut {
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:  opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
 	-webkit-transform-origin: 0% 50%;
 	-webkit-animation: rotateCubeRightOut .6s both ease-in;
 	-moz-transform-origin: 0% 50%;
@@ -770,6 +785,11 @@
 	animation: rotateCubeRightOut .6s both ease-in;
 }
 .pt-page-rotateCubeRightIn {
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:  opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
 	-webkit-transform-origin: 100% 50%;
 	-webkit-animation: rotateCubeRightIn .6s both ease-in;
 	-moz-transform-origin: 100% 50%;
@@ -778,6 +798,11 @@
 	animation: rotateCubeRightIn .6s both ease-in;
 }
 .pt-page-rotateCubeTopOut {
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:  opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
 	-webkit-transform-origin: 50% 100%;
 	-webkit-animation: rotateCubeTopOut .6s both ease-in;
 	-moz-transform-origin: 50% 100%;
@@ -786,6 +811,11 @@
 	animation: rotateCubeTopOut .6s both ease-in;
 }
 .pt-page-rotateCubeTopIn {
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:  opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
 	-webkit-transform-origin: 50% 0%;
 	-webkit-animation: rotateCubeTopIn .6s both ease-in;
 	-moz-transform-origin: 50% 0%;
@@ -794,6 +824,11 @@
 	animation: rotateCubeTopIn .6s both ease-in;
 }
 .pt-page-rotateCubeBottomOut {
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:  opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
 	-webkit-transform-origin: 50% 0%;
 	-webkit-animation: rotateCubeBottomOut .6s both ease-in;
 	-moz-transform-origin: 50% 0%;
@@ -802,6 +837,11 @@
 	animation: rotateCubeBottomOut .6s both ease-in;
 }
 .pt-page-rotateCubeBottomIn {
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:  opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
 	-webkit-transform-origin: 50% 100%;
 	-webkit-animation: rotateCubeBottomIn .6s both ease-in;
 	-moz-transform-origin: 50% 100%;
@@ -812,6 +852,11 @@
 
 /* carousel */
 .pt-page-rotateCarouselLeftOut {
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:  opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
 	-webkit-transform-origin: 100% 50%;
 	-webkit-animation: rotateCarouselLeftOut .8s both ease;
 	-moz-transform-origin: 100% 50%;
@@ -820,6 +865,11 @@
 	animation: rotateCarouselLeftOut .8s both ease;
 }
 .pt-page-rotateCarouselLeftIn {
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:  opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
 	-webkit-transform-origin: 0% 50%;
 	-webkit-animation: rotateCarouselLeftIn .8s both ease;
 	-moz-transform-origin: 0% 50%;
@@ -828,6 +878,11 @@
 	animation: rotateCarouselLeftIn .8s both ease;
 }
 .pt-page-rotateCarouselRightOut {
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:  opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
 	-webkit-transform-origin: 0% 50%;
 	-webkit-animation: rotateCarouselRightOut .8s both ease;
 	-moz-transform-origin: 0% 50%;
@@ -836,6 +891,11 @@
 	animation: rotateCarouselRightOut .8s both ease;
 }
 .pt-page-rotateCarouselRightIn {
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:  opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
 	-webkit-transform-origin: 100% 50%;
 	-webkit-animation: rotateCarouselRightIn .8s both ease;
 	-moz-transform-origin: 100% 50%;
@@ -844,6 +904,11 @@
 	animation: rotateCarouselRightIn .8s both ease;
 }
 .pt-page-rotateCarouselTopOut {
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:  opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
 	-webkit-transform-origin: 50% 100%;
 	-webkit-animation: rotateCarouselTopOut .8s both ease;
 	-moz-transform-origin: 50% 100%;
@@ -852,6 +917,11 @@
 	animation: rotateCarouselTopOut .8s both ease;
 }
 .pt-page-rotateCarouselTopIn {
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:  opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
 	-webkit-transform-origin: 50% 0%;
 	-webkit-animation: rotateCarouselTopIn .8s both ease;
 	-moz-transform-origin: 50% 0%;
@@ -860,6 +930,11 @@
 	animation: rotateCarouselTopIn .8s both ease;
 }
 .pt-page-rotateCarouselBottomOut {
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:  opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
 	-webkit-transform-origin: 50% 0%;
 	-webkit-animation: rotateCarouselBottomOut .8s both ease;
 	-moz-transform-origin: 50% 0%;
@@ -868,6 +943,11 @@
 	animation: rotateCarouselBottomOut .8s both ease;
 }
 .pt-page-rotateCarouselBottomIn {
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:  opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
 	-webkit-transform-origin: 50% 100%;
 	-webkit-animation: rotateCarouselBottomIn .8s both ease;
 	-moz-transform-origin: 50% 100%;
@@ -878,6 +958,11 @@
 
 /* sides */
 .pt-page-rotateSidesOut {
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:  opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
 	-webkit-transform-origin: -50% 50%;
 	-webkit-animation: rotateSidesOut .5s both ease-in;
 	-moz-transform-origin: -50% 50%;
@@ -886,6 +971,11 @@
 	animation: rotateSidesOut .5s both ease-in;
 }
 .pt-page-rotateSidesIn {
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:  opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
 	-webkit-transform-origin: 150% 50%;
 	-webkit-animation: rotateSidesIn .5s both ease-out;
 	-moz-transform-origin: 150% 50%;
@@ -896,6 +986,11 @@
 
 /* slide */
 .pt-page-rotateSlideOut {
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:  opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
 	-webkit-animation: rotateSlideOut 1s both ease;
 	-moz-animation: rotateSlideOut 1s both ease;
 	animation: rotateSlideOut 1s both ease;

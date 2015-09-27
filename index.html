@@ -346,12 +346,12 @@
                             <li><span class="user"><img src="assets/images/usernameicon.png" alt=""/></span><input
                                     type="text" placeholder="请输入你的名字" ng-model="usernames" name="usernames"
                                     ng-pattern="/^[a-z0-9_\u4e00-\u9fa5]+$/">
-                                <div class="error" ng-show="myForm.usernames.$invalid">请正确输入你的名字</div>
+                                <div class="error" ng-show="myForm.usernames.$invalid" value="aaa">请正确输入你的名字</div>
                             </li>
                             <li>
                                 <span class="user"><img src="assets/images/phonenumbericon.png" alt=""/></span>
                                 <input type="text" ng-model="number" name="number"
-                                       ng-pattern="/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/"/>
+                                       ng-pattern="/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/" value="13162080076" />
 
                                 <div class="error" ng-show="myForm.number.$invalid">请正确输入手机号码</div>
                             </li>
@@ -389,7 +389,7 @@
                         phone: $scope.number
                     }
                 }).success(function (data) {
-                    $('.commitsucessfull').show().siblings().hide();
+                   $('.commitsucessfull').show().siblings().hide();
                 })
 
             } else{

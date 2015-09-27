@@ -325,7 +325,9 @@
         <div class="pt-page pt-page-14 pt-page-question total-finish" ng-app="form">
             <div class="answer-error finish-error">
                 <div class="pos yes-or-no animation-parent">
-                    <img class="pt-page-scaleUpDown" data-aniclss="pt-page-scaleUpDown" src="assets/images/no.gif" alt=""/>
+                    <img class="pt-page-scaleUpDown" data-aniclss="pt-page-scaleUpDown" src="assets/images/no.gif"
+                         alt=""/>
+
                     <div class="redo">
                         <span>很抱歉！ 5道题你您都没有回答对哦!</span>
                         <a href="#" class="reanswer">重新答题</a>
@@ -334,33 +336,45 @@
                 <img data-src="assets/images/page06.jpg" alt=""/>
             </div>
             <div class="finish-right">
-            <div class="pos yes-or-no animation-parent">
-                <img class="pt-page-scaleUpDown" data-aniclss="pt-page-scaleUpDown" src="assets/images/yes.gif" alt=""/>
-                <span>恭喜你！都答对了！</span>
+                <div class="pos yes-or-no animation-parent">
+                    <img class="pt-page-scaleUpDown" data-aniclss="pt-page-scaleUpDown" src="assets/images/yes.gif"
+                         alt=""/>
+                    <span>恭喜你！都答对了！</span>
 
-                <form action="" name="myForm" ng-controller="submittt">
-                    <ul>
-                        <li><span class="user"><img src="assets/images/usernameicon.png" alt=""/></span><input
-                                type="text" placeholder="请输入你的名字" ng-model="usernames" name="usernames"
-                                ng-pattern="/^[a-z0-9_\u4e00-\u9fa5]+$/" required>
-
-
-                            <div class="error" ng-show="myForm.usernames.$invalid">请正确输入你的名字</div>
-                        </li>
+                    <form action="" name="myForm" ng-controller="submittt">
+                        <ul>
+                            <li><span class="user"><img src="assets/images/usernameicon.png" alt=""/></span><input
+                                    type="text" placeholder="请输入你的名字" ng-model="usernames" name="usernames"
+                                    ng-pattern="/^[a-z0-9_\u4e00-\u9fa5]+$/" required>
 
 
-                        <li>
-                            <span class="user"><img src="assets/images/phonenumbericon.png" alt=""/></span>
-                            <input type="text" ng-model="number" name="number"
-                                   ng-pattern="/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/" required/>
+                                <div class="error" ng-show="myForm.usernames.$invalid">请正确输入你的名字</div>
+                            </li>
 
-                            <div class="error" ng-show="myForm.number.$invalid">请正确输入手机号码</div>
-                        </li>
-                    </ul>
-                    <a href="#" ng-click="submits()">提 交</a></form>
+
+                            <li>
+                                <span class="user"><img src="assets/images/phonenumbericon.png" alt=""/></span>
+                                <input type="text" ng-model="number" name="number"
+                                       ng-pattern="/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/" required/>
+
+                                <div class="error" ng-show="myForm.number.$invalid">请正确输入手机号码</div>
+                            </li>
+                        </ul>
+                        <a href="#" ng-click="submits()">提 交</a></form>
+                </div>
+                <img class="bgpic" data-src="assets/images/page06.jpg" alt=""/>
             </div>
-            <img class="bgpic" data-src="assets/images/page06.jpg" alt=""/>
+
+            <div class="answer-error commitsucessfull">
+                <div class="pos yes-or-no animation-parent">
+
+                    <div class="redo">
+                        <span>您的信息已提交成功，如果您获奖，我们会通过您的手机联系您，谢谢。</span>
+                    </div>
+                </div>
+                <img data-src="assets/images/page06.jpg" alt=""/>
             </div>
+
         </div>
     </div>
 </section>
@@ -379,7 +393,7 @@
                         phone: $scope.number
                     }
                 }).success(function (data) {
-                    console.log()
+                    data && $('.commitsucessfull').show().siblings().hide();
                 })
 
             }

@@ -159,10 +159,10 @@ $(function () {
             var cur = $nextPage.find("[data-aniclss]");
             if ($nextPage.hasClass('pt-page-question')) {
                 stopAutoMove = true;
-                $('.Move').hide();
+                $('.test').hide();
             } else {
                 stopAutoMove = false;
-                $('.Move').show();
+                $('.test').show();
             }
             totaoResult($nextPage)
             $pages.find("[data-aniclss]").removeClass(dongClass.join(' '));

@@ -613,4 +613,10 @@ dl span .check {
 
 .title6-content{
     visibility: hidden;
+    text-indent: -99999px;
+}
+.yes-or-no a{
+    width: 45%;
+    padding: 8px 0;
+    font-size: 16px;
 }

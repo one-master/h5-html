@@ -12,7 +12,15 @@
 
 </head>
 <body>
+<div id="musicWrap" class="music_wrap">
+    <span class="text move hide">打开</span>
+    <i id="audioBtn" class="btn_music"></i>
+
+    <div class="coffee-steam-box" style="height: 100px; width: 50px; left: 60px; top: -92px; position: absolute; overflow: hidden; z-index: 0;"></div></div>
+<video src="smiles.mp3" autoplay id="video" style="display: none;"></video>
 <section>
+
+
     <div class="container">
         <div class="loading">
             <img src="assets/images/loading.gif" alt=""/>
@@ -28,14 +36,14 @@
                         <img src="assets/images/page01title.png" alt=""/></div>
                     <div class="title-pic2" data-aniclss="pt-page-rotateCarouselLeftIn"><img
                             src="assets/images/page01subtitle.png" alt=""/></div>
-                    <p>
-                        在听完上一期关于传奇白马的故事后，你是否对那片神奇的活泉水特别感兴趣呢？由Rocozels侯爵出资修建的活泉水池，因造福了许多人，使得雅漾这座小城也越来越有名，成为肌肤疗愈之城。</p>
+                    <!--<p>
+                        <!在听完上一期关于传奇白马的故事后，你是否对那片神奇的活泉水特别感兴趣呢？由Rocozels侯爵出资修建的活泉水池，因造福了许多人，使得雅漾这座小城也越来越有名，成为肌肤疗愈之城。</p>-->
 
                 </div>
             </div>
             <img data-src="assets/images/page01.jpg"/></div>
 
-        <div class="pt-page pt-page-2"><img src="assets/images/page02.jpg" alt=""/></div>
+        <div class="pt-page pt-page-2"><img data-src="assets/images/page02.jpg" alt=""/></div>
         <div class="pt-page pt-page-3"><h1>
             每一滴雅漾活泉水都在数亿年形成的地层中酝酿了几十年，充分吸收岩石和土壤珍贵的矿物质和活性成分后，形成它独特的深层分子结构和特有的原子微粒间组成方式。<span>正是这样生物及矿物的双重活性让雅漾活泉水对于愈疗舒缓有着神奇作用，并且不能被复制。</span>所以，活泉是时间与自然的馈赠，弥足珍贵。</span>
             页面切换效果</h1><img data-src="assets/images/page03.jpg" alt=""/></div>
@@ -338,10 +346,15 @@
                             </li>
                             <li>
                                 <span class="user"><img src="assets/images/phonenumbericon.png" alt=""/></span>
-                                <input type="text" ng-model="number" name="number"
+                                <input type="text" ng-model="number" placeholder="请输入您的电话" name="number"
                                        ng-pattern="/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/" value="13162080076" />
 
                                 <div class="error" ng-show="myForm.number.$invalid">请正确输入手机号码</div>
+                            </li>
+
+                            <li><span class="user"><img src="assets/images/addressicon.png" alt=""/></span><input
+                                    type="text" placeholder="请输入您的地址" ng-model="address" name="address">
+
                             </li>
                         </ul>
                         <a href="#" ng-click="submits()">提 交</a></form>
@@ -374,7 +387,8 @@
                     url: "sentMail.php",
                     params: {
                         user: $scope.usernames,
-                        phone: $scope.number
+                        phone: $scope.number,
+                        address:$scope.address
                     }
                 }).success(function (data) {
                    $('.commitsucessfull').show().siblings().hide();

@@ -227,4 +227,17 @@ $(function () {
     $(".title1 .title-pic1").addClass('pt-page-moveFromTop');
     $(".title1 .title-pic2").addClass('pt-page-rotateCarouselLeftIn');
 
+
+    var play = true;
+    var videoplay = $('#video')[0];
+    $('#audioBtn').click(function(){
+        if(play){
+            play = false;
+            videoplay.pause();
+        } else{
+            play = true;
+            videoplay.play();
+        }
+    });
+
 })
